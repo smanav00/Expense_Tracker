@@ -84,13 +84,13 @@ function updateValues(){
         amounts.filter(item => item < 0).reduce((acc, item) => (acc += item), 0)* -1
     ).toFixed(2);
     
-    console.log(total);
-    console.log(income);
-    console.log(expense);
+    // console.log(total);
+    // console.log(income);
+    // console.log(expense);
 
-    balance.innerText = `$${total}`;
-    money_plus.innerText = `$${income}`;
-    money_minus.innerText = `$${expense}`;
+    balance.innerText = `$Rs. {total}`;
+    money_plus.innerText = `$Rs. {income}`;
+    money_minus.innerText = `$Rs. {expense}`;
 }
 
 //Init App
